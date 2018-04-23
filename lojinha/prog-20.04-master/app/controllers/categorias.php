@@ -1,10 +1,6 @@
 <?php
 
-/*controllers/categorias.php
-
-AÇÃO PRINCIPAL - LISTAR TODAS AS CATEGORIAS
-
- */
+/*AÇÃO PRINCIPAL - LISTAR TODAS AS CATEGORIAS */
 
 require_once '../modelo/CRUDCategoria.php';
 
@@ -41,7 +37,9 @@ switch ($acao){
             include '../views/templates/cabecalho.php';
             include '../views/categorias/inserir.php';
             include '../views/templates/rodape.php';
+            
         }else{
+            
             //gravar dados digitados no BD
             $nome= $_POST['nome'];
             $descricao = $_POST['descricao'];
@@ -51,7 +49,6 @@ switch ($acao){
             header('Location:categorias.php');
         }
         break;
-
 
     case 'alterar':
 
@@ -74,14 +71,6 @@ switch ($acao){
             header('Location:categorias.php');
         }
         break;
-
-
-
-
-
-
-
-
 
     case 'exibir':
         $id = $_GET['id'];
