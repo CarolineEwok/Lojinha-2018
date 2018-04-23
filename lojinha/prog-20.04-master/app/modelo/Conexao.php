@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aluno
- * Date: 02/03/18
- * Time: 16:34
- */
 
     class Conexao {
 
@@ -29,7 +23,7 @@
         }
         return $conexao;
     }
-// class ends
+
 }
 
 
