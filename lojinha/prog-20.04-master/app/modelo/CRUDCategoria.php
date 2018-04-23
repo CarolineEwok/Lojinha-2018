@@ -73,7 +73,3 @@ class CRUDCategoria
     }
 }
 
-//$croods  = new CRUDCategoria();
-//$cats = $croods->getCategorias();
-//
-//var_dump($cats);
